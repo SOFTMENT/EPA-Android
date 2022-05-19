@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.application.epa.Fragments.ChatFragment">
+    <EditText
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="textPersonName"
+        android:id="@+id/searchEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_back"
+        android:hint="@string/search_for_user"
+        android:fontFamily="@font/sfpromedium"
+        android:textSize="13sp"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:drawablePadding="4dp"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/inboxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/inbox"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/sfprosemibold"
+        android:textColor="#040404"
+        />
+    <TextView
+        android:id="@+id/seeUnreadAndRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:textSize="13sp"
+        android:text="@string/unread"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@id/inboxText"
+        android:fontFamily="@font/sfprosemibold"
+        android:textColor="@color/salmon"
+        />
+
+</RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:scrollbars="none"
+
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        />
+
+
+
+
+
+</LinearLayout>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/message"
+        android:text="@string/no_message_available"
+        android:textSize="12sp"
+        android:fontFamily="@font/sfpromedium2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

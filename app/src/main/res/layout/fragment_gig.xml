@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/topRR"
+    android:visibility="gone"
+    >
+        <TextView
+            android:id="@+id/myaccountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/seller_profile"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sfprosemibold"
+            android:textColor="#040404"
+            />
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/shareApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/share"
+            android:layout_alignBaseline="@+id/myaccountText"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfprosemibold"
+            android:textColor="@color/salmon"
+            />
+
+    <FrameLayout
+
+        android:layout_below="@+id/myaccountText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/frame"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        >
+
+        <ImageView
+
+            android:id="@+id/profile_image"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/man1" />
+
+        <ImageView
+
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@drawable/circle_back"
+
+            android:src="@drawable/circleimageview" />
+
+    </FrameLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vijay Rathore"
+            android:fontFamily="@font/sfprosemibold2"
+            android:textSize="15sp"
+            android:textColor="#414141"
+            android:layout_below="@+id/frame"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/name"
+            android:id="@+id/mobileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="7869992340"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="11sp"
+            android:lines="1"
+            />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/changeStoreImage"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_below="@+id/mobileNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="#42A5F5"
+            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="#fff"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/username"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_store_image"
+                android:fontFamily="@font/sfprosemibold2"
+                android:textSize="12sp"
+                android:lines="1"
+                />
+        </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settingsVIEW"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/topRR"
+            android:layout_marginTop="8dp"
+            android:background="#f6f6f6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/sfprosemibold2"
+                android:text="@string/my_products"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_below="@+id/settingsVIEW"
+            >
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/message"
+                android:text="@string/no_product_available_for_sale"
+                android:textSize="12sp"
+                android:fontFamily="@font/sfpromedium2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/settingsVIEW"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

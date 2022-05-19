@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "401770960609",
+    "project_id": "epa---economia-participativa",
+    "storage_bucket": "epa---economia-participativa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401770960609:android:de3601cb6b38292c6349a0",
+        "android_client_info": {
+          "package_name": "com.application.epa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401770960609-itkl2p754i7pu30rgek4qkt4va26l9qc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPlqH23DIJYG89vD7QJytAcTbX21HoNSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401770960609-itkl2p754i7pu30rgek4qkt4va26l9qc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

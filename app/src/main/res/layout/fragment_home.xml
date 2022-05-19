@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.application.epa.Fragments.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/rr"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/cancel_search"
+            android:background="@drawable/edittext_back"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/sfpromedium"
+            android:hint="@string/search_by_title_city_name"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <ImageView
+
+            android:id="@+id/cancel_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_cancel_24" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/categoriesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rr"
+        android:layout_alignStart="@+id/rr"
+        android:textSize="18sp"
+        android:text="@string/categories"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/sfprosemibold"
+        android:textColor="#040404"
+        />
+
+    <TextView
+        android:id="@+id/seeAllText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rr"
+        android:layout_marginEnd="16dp"
+        android:textSize="13sp"
+        android:text="@string/see_all"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@id/categoriesText"
+        android:fontFamily="@font/sfprosemibold"
+        android:textColor="@color/salmon"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/cat_recyclerview"
+       android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/categoriesText"
+        android:layout_marginTop="16dp"
+        />
+
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/cat_recyclerview"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        
+
+        <TextView
+
+            android:visibility="gone"
+            android:id="@+id/no_product_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/sfpromedium2"
+            android:text="@string/no_problem_available" />
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:visibility="gone"
+            android:id="@+id/product_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="11dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal" />
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/shimmer_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_demo_angle="20"
+            app:shimmer_demo_child_count="10"
+            app:shimmer_demo_grid_child_count="2"
+            app:shimmer_demo_layout="@layout/item_shimmer"
+            app:shimmer_demo_layout_manager_type="grid" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+
+            android:visibility="gone"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomRR"
+            android:layout_centerHorizontal="true"
+            app:SpinKit_Color="@color/salmon" />
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/product_recyclerview"
+        android:id="@+id/bottomRR"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

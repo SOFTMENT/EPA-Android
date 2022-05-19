@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+   >
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:src="@drawable/promotion"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/offer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/featured_Ad_for_30_days"
+        android:textSize="14sp"
+        android:textColor="#414141"
+        android:fontFamily="@font/sfprosemibold2"
+        android:layout_gravity="center"
+        />
+
+    <com.stripe.android.view.CardInputWidget
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittext_back"
+        android:id="@+id/cardInputWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:weightSum="2"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/cancel"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sfpromedium2"
+            android:text="@string/cancel"
+            android:background="@drawable/transparent_back"
+            android:backgroundTint="#7C7C7C"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginStart="5dp"
+        android:layout_weight="1"
+        android:id="@+id/pay"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sfpromedium2"
+        android:text="@string/pay_5_r"
+        android:backgroundTint="@color/marsala"
+        android:background="@drawable/transparent_back"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="45dp"
+    android:layout_marginEnd="45dp"
+    tools:context="com.application.epa.AddCateogryScreen">
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        />
+
+    <TextView
+
+        android:id="@+id/categoriesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Add Category"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/sfprosemibold"
+        android:textColor="#040404"
+        android:layout_above="@+id/ll"
+        android:layout_marginBottom="24dp"
+        />
+
+    <LinearLayout
+        android:background="@drawable/transparent_back"
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+        <ImageView
+            android:id="@+id/categoryImage"
+            android:src="@drawable/placeholder"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            />
+        <EditText
+
+            android:id="@+id/categoryNamePT"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_back"
+            android:hint="Portuguese Category Name"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="13sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="text"
+            />
+        <EditText
+
+            android:id="@+id/categoryNameEN"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_back"
+            android:hint="English Category Name"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="13sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="text"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addCategory"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#fff"
+            android:background="@color/marsala"
+            android:layout_marginTop="40dp"
+            android:text="Add Category"
+            android:textSize="13sp"
+            android:fontFamily="@font/sfprosemibold2"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>

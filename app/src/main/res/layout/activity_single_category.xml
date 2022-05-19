@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.application.epa.SingleCategoryActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        />
+
+
+    <EditText
+        android:layout_below="@+id/back"
+        android:id="@+id/searchEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_back"
+        android:hint="@string/search_by_title_city_name"
+        android:fontFamily="@font/sfpromedium"
+        android:textSize="13sp"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:drawablePadding="4dp"
+        />
+
+    <TextView
+        android:layout_below="@+id/searchEditText"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food_and_drinks"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/sfprosemibold"
+        android:textSize="18sp"
+        android:textColor="#040404"
+        android:id="@+id/categoryName"
+        />
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/categoryName"
+        android:layout_marginStart="16dp"
+        android:id="@+id/sub_cat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="Electronic"
+        android:fontFamily="@font/sfprosemibold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/product_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/spin_kit"
+        android:layout_below="@+id/sub_cat_name"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="11dp"
+        android:clipToPadding="false" />
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:id="@+id/shimmer_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/spin_kit"
+        android:layout_below="@+id/sub_cat_name"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="11dp"
+        app:shimmer_demo_angle="20"
+        app:shimmer_demo_child_count="12"
+        app:shimmer_demo_grid_child_count="2"
+        app:shimmer_demo_layout="@layout/item_shimmer"
+        app:shimmer_demo_layout_manager_type="grid" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+
+        android:visibility="gone"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.ThreeBounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:SpinKit_Color="@color/salmon" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/no_product_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/sfpromedium2"
+        android:text="@string/no_product_available"
+        android:textSize="12sp" />
+</RelativeLayout>

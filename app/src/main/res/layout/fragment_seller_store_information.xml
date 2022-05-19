@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.application.epa.CreateNewAccount">
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setup_store_profile"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/sfprosemibold"
+                android:textSize="18sp"
+                android:textColor="#040404"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:lineSpacingExtra="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/for_selling_on_ecde_nyou_have_to_create_seller_profile"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/sfprosemibold2"
+                    android:textSize="11sp"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <FrameLayout
+                android:layout_marginTop="30dp"
+
+                android:id="@+id/frame"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                >
+
+                <ImageView
+
+                    android:id="@+id/user_profile"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/man1" />
+
+                <ImageView
+
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+
+
+                    android:src="@drawable/circleimageview" />
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/taptochange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/sfpromedium2"
+                android:text="@string/add_store_image"
+                android:textColor="#1976D2"
+                />
+            <EditText
+                android:id="@+id/storeName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/transparent_back"
+                android:hint="@string/store_name"
+                android:fontFamily="@font/sfpromedium2"
+                android:textSize="13sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:inputType="textPersonName"
+                />
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/transparent_back"
+                android:hint="@string/store_address"
+                android:fontFamily="@font/sfpromedium2"
+                android:textSize="13sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:inputType="textPostalAddress"
+                />
+            <AutoCompleteTextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/transparent_back"
+                android:hint="@string/city"
+                android:fontFamily="@font/sfpromedium2"
+                android:textSize="13sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:inputType="textNoSuggestions"
+
+                />
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/transparent_back"
+                android:hint="@string/phone_number"
+                android:fontFamily="@font/sfpromedium2"
+                android:textSize="13sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:inputType="phone"
+                />
+            <TextView
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number_will_not_visible_on_your_profile"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/sfpromedium2"
+                android:textSize="10sp"
+                android:textColor="@color/note_color"
+                />
+            <EditText
+
+                android:id="@+id/storeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/transparent_back"
+                android:hint="@string/about_your_store"
+                android:fontFamily="@font/sfpromedium2"
+                android:textSize="13sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="top|start"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginBottom="16dp"
+                android:id="@+id/createSeller"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/transparent_back"
+                android:backgroundTint="@color/marsala"
+                android:text="@string/create_seller_profile"
+                android:textSize="12sp"
+                android:fontFamily="@font/sfpromedium2"
+                android:textColor="#fff"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

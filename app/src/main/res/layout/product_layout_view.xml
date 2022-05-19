@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+   android:padding="4dp"
+    android:background="@drawable/product_back_view">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/product_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder1"
+        app:riv_corner_radius="4dp"
+
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/price_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        app:cardBackgroundColor="@color/salmon"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="4dp"
+        app:cardElevation="4dp"
+        >
+        <TextView
+
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="R$ 234"
+            android:textSize="9sp"
+            android:fontFamily="@font/sfprosemibold2"
+            android:textColor="#fff"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/adsCard"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        app:cardBackgroundColor="#2C2C2C"
+        android:layout_alignParentEnd="true"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="4dp"
+        >
+
+        <TextView
+
+            android:id="@+id/tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sfprosemibold2"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="AD"
+            android:textColor="#fff"
+            android:textSize="9sp"
+
+            />
+    </androidx.cardview.widget.CardView>
+    <TextView
+
+        android:id="@+id/product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oppo V7 Mobile 64 Gb Urgent Sell"
+        android:layout_below="@+id/product_image"
+        android:layout_centerInParent="true"
+        android:maxLines="1"
+        android:textColor="#616161"
+        android:fontFamily="@font/sfprosemibold"
+        android:textSize="10sp"
+        android:layout_marginTop="6dp"
+        android:textAlignment="center"
+
+        />
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

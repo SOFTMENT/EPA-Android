@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.application.epa.Fragments.PostFragment">
+
+<LinearLayout
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ecommercedev"
+        />
+    <TextView
+        android:id="@+id/categoriesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/add_new_product"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sfprosemibold"
+        android:textColor="#040404"
+        />
+    <TextView
+        android:lineSpacingExtra="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/to_start_selling_nall_you_need_is_a_title_description_images_and_price"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/sfprosemibold2"
+        android:textSize="11sp"
+
+        />
+
+
+
+        <EditText
+
+
+            android:background="@drawable/transparent_back"
+            android:layout_marginTop="25dp"
+            android:maxLength="50"
+            android:id="@+id/p_title"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/sfprosemibold2"
+            android:textSize="12sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null"
+            android:hint="@string/product_title"
+            />
+
+    <TextView
+
+        android:lineSpacingExtra="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/give_your_product_a_short_and_clear_title"
+        android:layout_marginTop="4dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:fontFamily="@font/sfpromedium2"
+        android:textSize="10sp"
+        android:textColor="@color/note_color"
+        />
+
+        <EditText
+            android:background="@drawable/transparent_back"
+            android:layout_marginTop="25dp"
+            android:maxLength="749"
+            android:id="@+id/p_description"
+            android:padding="10dp"
+            android:layout_gravity="top|start"
+            android:gravity="top|start"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:fontFamily="@font/sfprosemibold2"
+            android:textSize="12sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:hint="@string/product_description"
+            />
+
+    <TextView
+
+        android:lineSpacingExtra="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/give_your_product_a_short_and_clear_description"
+        android:layout_marginTop="4dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:fontFamily="@font/sfpromedium2"
+        android:textSize="10sp"
+        android:textColor="@color/note_color"
+        />
+
+        <EditText
+            android:background="@drawable/transparent_back"
+            android:hint="@string/product_price_r"
+            android:layout_marginTop="25dp"
+            android:id="@+id/p_price"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/sfprosemibold2"
+            android:textSize="12sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null"
+           android:maxLength="14"
+            />
+    <TextView
+
+        android:lineSpacingExtra="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/product_price_is_optional"
+        android:layout_marginTop="4dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:fontFamily="@font/sfpromedium2"
+        android:textSize="10sp"
+        android:textColor="@color/note_color"
+        />
+
+        <EditText
+            android:background="@drawable/transparent_back"
+            android:id="@+id/quantity"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/sfprosemibold2"
+            android:textSize="12sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null"
+            android:maxLength="5"
+            android:hint="@string/quant"
+            android:layout_marginTop="25dp"
+            />
+
+
+    <AutoCompleteTextView
+        android:background="@drawable/transparent_back"
+        android:focusable="false"
+        android:id="@+id/chooseCategory"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/sfprosemibold2"
+        android:hint="@string/choose_category"
+        android:inputType="none"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="12sp" />
+
+    <AutoCompleteTextView
+            android:background="@drawable/transparent_back"
+            android:focusable="false"
+            android:layout_marginTop="25dp"
+            android:hint="@string/choose_subcategory"
+            android:id="@+id/chooseSubcategory"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/sfprosemibold2"
+            android:textSize="12sp"
+            android:paddingStart="10dp"
+            android:inputType="none"
+            android:paddingEnd="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/sfprosemibold2"
+        android:text="@string/product_is_new_or_used"
+        android:textSize="12sp" />
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/isProductFreshRadioGroup"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/yes_new"
+            android:textSize="13sp"
+            android:textColor="@color/gnt_gray"
+            android:buttonTint="@color/salmon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfprosemibold2"
+            android:text="@string/new_word"
+            />
+        <RadioButton
+            android:id="@+id/no_used"
+            android:textSize="13sp"
+            android:textColor="@color/gnt_gray"
+            android:layout_marginStart="16dp"
+            android:buttonTint="@color/salmon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfprosemibold2"
+            android:text="@string/used"
+            />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sfprosemibold2"
+        android:text="@string/will_you_deliver_this_product"
+        android:textSize="12sp" />
+
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/willYouDeliverRadioBtn"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:textSize="13sp"
+            android:id="@+id/yes_deliver"
+            android:textColor="@color/gnt_gray"
+            android:buttonTint="@color/salmon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfprosemibold2"
+            android:text="@string/yes"
+            />
+        <RadioButton
+            android:textSize="13sp"
+            android:id="@+id/no_deliver"
+            android:textColor="@color/gnt_gray"
+            android:layout_marginStart="16dp"
+            android:buttonTint="@color/salmon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfprosemibold2"
+            android:text="@string/no"
+            />
+    </RadioGroup>
+<LinearLayout
+    android:visibility="gone"
+    android:id="@+id/sameDayLL"
+    android:layout_marginTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfprosemibold2"
+        android:text="@string/can_you_deliver_on_the_same_day"
+        android:textSize="13sp" />
+
+    <RadioGroup
+        android:id="@+id/canYouDeliverOnSameDayRadioBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/yes_same_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/salmon"
+            android:fontFamily="@font/sfprosemibold2"
+            android:text="@string/yes"
+            android:textColor="@color/gnt_gray" />
+
+        <RadioButton
+            android:id="@+id/not_same_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:buttonTint="@color/salmon"
+            android:fontFamily="@font/sfprosemibold2"
+            android:text="@string/no"
+            android:textColor="@color/gnt_gray" />
+    </RadioGroup>
+</LinearLayout>
+
+        <EditText
+            android:background="@drawable/edittext_back"
+            android:hint="@string/max_delivery_days"
+            android:layout_marginTop="25dp"
+            android:visibility="gone"
+            android:id="@+id/delivery_day"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/sfprosemibold2"
+            android:textSize="12sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null"
+            android:maxLength="5"
+            />
+
+
+<!--        <EditText-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            android:background="@drawable/edittext_back"-->
+<!--            android:visibility="gone"-->
+<!--            android:hint="@string/delivery_charge_r"-->
+<!--            android:id="@+id/delivery_charge"-->
+<!--            android:inputType="number"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:fontFamily="@font/sfprosemibold2"-->
+<!--            android:textSize="12sp"-->
+<!--            android:paddingStart="10dp"-->
+<!--            android:paddingEnd="10dp"-->
+<!--            android:textCursorDrawable="@null"-->
+<!--            android:maxLength="5"-->
+<!--            />-->
+
+    <LinearLayout
+
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            app:riv_corner_radius="4dp"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/transparent_back"
+            android:id="@+id/oneImage"
+            />
+    <LinearLayout
+        android:id="@+id/oneLL"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@drawable/transparent_back"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/picture"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#64B5F6"
+
+            android:hint="@string/choose_product_image"
+            android:fontFamily="@font/sfprosemibold"
+            android:textSize="11sp"
+
+            />
+    </LinearLayout>
+        <com.makeramen.roundedimageview.RoundedImageView
+         android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:layout_marginStart="4dp"
+
+            android:background="@drawable/transparent_back"
+            android:id="@+id/twoImage"
+            app:riv_corner_radius="4dp"
+            />
+        <LinearLayout
+            android:id="@+id/twoLL"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:background="@drawable/transparent_back"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/picture"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#64B5F6"
+
+                android:hint="@string/choose_product_image"
+                android:fontFamily="@font/sfprosemibold"
+                android:textSize="11sp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            app:riv_corner_radius="4dp"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:layout_marginEnd="4dp"
+
+            android:background="@drawable/transparent_back"
+            android:id="@+id/threeImage"
+            />
+        <LinearLayout
+            android:id="@+id/threeLL"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:background="@drawable/transparent_back"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/picture"
+                />
+            <TextView
+                android:lineSpacingExtra="2dp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#64B5F6"
+
+                android:hint="@string/choose_product_image"
+                android:fontFamily="@font/sfprosemibold"
+                android:textSize="11sp"
+
+                />
+        </LinearLayout>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/transparent_back"
+            android:id="@+id/fourImage"
+            app:riv_corner_radius="4dp"
+            />
+        <LinearLayout
+            android:id="@+id/fourLL"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:background="@drawable/transparent_back"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/picture"
+                />
+            <TextView
+                android:textAlignment="center"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#64B5F6"
+
+                android:hint="@string/choose_product_image"
+                android:fontFamily="@font/sfprosemibold"
+                android:textSize="11sp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginBottom="10dp"
+        android:id="@+id/addProduct"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/transparent_back"
+        android:backgroundTint="@color/marsala"
+        android:fontFamily="@font/sfpromedium2"
+        android:text="@string/add_product"
+        android:textColor="#fff"
+        android:textSize="13sp" />
+</LinearLayout>
+
+</ScrollView>

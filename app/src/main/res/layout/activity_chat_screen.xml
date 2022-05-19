@@ -1,0 +1,146 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/headerCard"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/blue_back"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                />
+
+
+
+
+            <FrameLayout
+                android:layout_centerVertical="true"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/back"
+                android:layout_marginTop="6dp"
+
+                android:id="@+id/frame"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                >
+
+                <ImageView
+
+                    android:id="@+id/profile_image"
+
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/man1"/>
+
+                <ImageView
+
+                    android:background="@drawable/circle_back"
+
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+
+                    android:src="@drawable/circleimageview" />
+
+            </FrameLayout>
+
+            <TextView
+               android:layout_centerVertical="true"
+                android:id="@+id/name"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/frame"
+                android:layout_marginStart="16dp"
+                android:text="Vijay Rathore"
+                android:fontFamily="@font/sfprosemibold2"
+                android:textSize="14sp"
+                android:textColor="#414141"
+                android:lines="1"
+                />
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/headerCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"
+        android:layout_above="@+id/chatlayout"
+        android:scrollbars="none"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/chatlayout"
+        app:cardBackgroundColor="#fff"
+        >
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/marsala"
+        >
+
+
+
+        <EditText
+            android:layout_marginStart="8dp"
+            android:maxLines="8"
+            android:layout_centerInParent="true"
+            android:id="@+id/message"
+            android:padding="6dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="13sp"
+            android:backgroundTint="#fff"
+            android:background="@drawable/transparent_back"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/sent"
+            />
+        <ImageView
+            android:id="@+id/sent"
+            android:layout_width="32dp"
+            android:layout_height="44dp"
+            android:src="@drawable/send"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+    <!--            1976D2-->

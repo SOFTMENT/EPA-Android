@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFFFFF</color>
+    <color name="purple_500">#FFFFFF</color>
+    <color name="purple_700">#FFFFFF</color>
+    <color name="teal_200">@color/salmon</color>
+    <color name="teal_700">@color/salmon</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="marsala">#8E0131</color>
+    <color name="salmon">#ff8c69</color>
+    <color name="active_dot">@color/salmon</color>
+    <color name="inactive_dot">@color/white</color>
+    <color name="currency_color">#43A047</color>
+    <color name="charcoal">#36454f</color>
+    <color name="note_color">#03A9F4</color>
+    <color name="colorGrey">#dddddd</color>
+    <color name="gnt_gray">#808080</color>
+
+    <color name="colorPrimary">#d91248</color>
+    <color name="colorPrimaryDark">#d91248</color>
+    <color name="colorAccent">#3ad23e</color>
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+
+
+</resources>

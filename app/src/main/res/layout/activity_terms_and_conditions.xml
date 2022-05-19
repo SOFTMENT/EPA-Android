@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.application.epa.PrivacyPolicyActivity">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_margin="16dp"
+            />
+
+
+        <TextView
+
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_amp_conditions"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sfprosemibold"
+            android:textSize="18sp"
+            android:textColor="#040404"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:lineSpacingExtra="4dp"
+            android:text="1. Termos"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ao acessar ao site EPA - ECONOMIA PARTICIPATIVA, concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis ​​e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis."
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se você não concordar com algum desses termos, está proibido de usar ou acessar este site. Os materiais contidos neste site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis."
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Uso de Licença"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="É concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software) no site EPA - ECONOMIA PARTICIPATIVA, apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma licença, não uma transferência de título e, sob esta licença, você não pode: modificar ou copiar os materiais; usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial); tentar descompilar ou fazer engenharia reversa de qualquer software contido no site EPA - ECONOMIA PARTICIPATIVA; remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou transferir os materiais para outra pessoa ou 'espelhe' os materiais em qualquer outro servidor."
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esta licença será automaticamente rescindida se você violar alguma dessas restrições e poderá ser rescindida por EPA - ECONOMIA PARTICIPATIVA a qualquer momento. Ao encerrar a visualização desses materiais ou após o término desta licença, você deve apagar todos os materiais  baixados em sua posse, seja em formato eletrônico ou impresso."
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Isenção de responsabilidade"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Os materiais no site da EPA - ECONOMIA PARTICIPATIVA são fornecidos 'como estão'. EPA - ECONOMIA PARTICIPATIVA não oferece garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação, garantias implícitas ou condições de comercialização, adequação a um fim específico ou não violação de propriedade intelectual ou outra violação de direitos."
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Além disso, o EPA - ECONOMIA PARTICIPATIVA não garante ou faz qualquer representação relativa à precisão, aos resultados prováveis ​​ou à confiabilidade do uso dos materiais em seu site ou de outra forma relacionado a esses materiais ou em sites vinculados a este site."
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Limitações"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Em nenhum caso o EPA - ECONOMIA PARTICIPATIVA ou seus fornecedores serão responsáveis ​​por quaisquer danos (incluindo, sem limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios) decorrentes do uso ou da incapacidade de usar os materiais em EPA - ECONOMIA PARTICIPATIVA, mesmo que EPA - ECONOMIA PARTICIPATIVA ou um representante autorizado da EPA - ECONOMIA PARTICIPATIVA tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. Como algumas jurisdições não permitem limitações em garantias implícitas, ou limitações de responsabilidade por danos consequentes ou incidentais, essas limitações podem não se aplicar a você."
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Precisão dos materiais"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Os materiais exibidos no site da EPA - ECONOMIA PARTICIPATIVA podem incluir erros técnicos, tipográficos ou fotográficos. EPA - ECONOMIA PARTICIPATIVA não garante que qualquer material em seu site seja preciso, completo ou atual. EPA - ECONOMIA PARTICIPATIVA pode fazer alterações nos materiais contidos em seu site a qualquer momento, sem aviso prévio. No entanto, EPA - ECONOMIA PARTICIPATIVA não se compromete a atualizar os materiais."
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Links"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O EPA - ECONOMIA PARTICIPATIVA não analisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de nenhum site vinculado. A inclusão de qualquer link não implica endosso por EPA - ECONOMIA PARTICIPATIVA do site. O uso de qualquer site vinculado é por conta e risco do usuário."
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modificações"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O EPA - ECONOMIA PARTICIPATIVA pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este site, você concorda em ficar vinculado à versão atual desses termos de serviço."
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lei aplicável"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estes termos e condições são regidos e interpretados de acordo com as leis do EPA - ECONOMIA PARTICIPATIVA e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade."
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+
+
+    </LinearLayout>
+</ScrollView>

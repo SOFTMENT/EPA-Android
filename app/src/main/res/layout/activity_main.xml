@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.application.epa.Utils.NonSwipeAbleViewPager
+        android:id="@+id/viewpager"
+        android:layout_above="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#E8E8E8"
+        android:layout_above="@+id/tabLayout"
+        android:id="@+id/line"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:tabGravity="fill"
+        app:tabIconTint="@color/tab_layout"
+        app:tabIndicator="@color/salmon"
+        app:tabMode="fixed"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabSelectedTextColor="@color/salmon"
+        app:tabTextAppearance="@style/tab_text"
+        app:tabTextColor="@color/gnt_gray"
+
+        />
+
+</RelativeLayout>

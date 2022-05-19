@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/availableupdate"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/update_ecde"
+        android:textSize="15sp"
+        android:fontFamily="@font/sfprobold2"
+        android:textColor="@color/black"
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textAlignment="center"
+        android:text="@string/ecde_recommended_that_you_update_to_the_latest_version"
+        android:textSize="13sp"
+        android:fontFamily="@font/sfpromedium2"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/update"
+        android:textSize="13sp"
+        android:textColor="#fff"
+        android:background="#3b8760"
+        />
+
+    <TextView
+        android:id="@+id/no_thanks"
+        android:textColor="@color/gnt_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textAlignment="center"
+        android:text="@string/no_thanks"
+        android:textSize="14sp"
+        android:fontFamily="@font/sfpromedium2"
+        />
+</LinearLayout>

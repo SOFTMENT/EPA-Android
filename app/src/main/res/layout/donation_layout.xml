@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/donation"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sfpromedium2"
+        android:textAlignment="center"
+        android:text="@string/donate_us_so_we_can_improve_our_ecde_platform"
+       />
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_back"
+        android:hint="@string/amount_r"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:fontFamily="@font/sfpromedium2"
+        android:textSize="13sp"
+        android:inputType="number"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:text="Cancel"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_height="40dp"
+            android:background="@drawable/transparent_back"
+            android:backgroundTint="#858585"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/donate"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:text="Donate"
+            android:fontFamily="@font/sfpromedium2"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_height="40dp"
+            android:background="@drawable/transparent_back"
+            android:backgroundTint="#529A55"
+            />
+    </LinearLayout>
+
+</LinearLayout>

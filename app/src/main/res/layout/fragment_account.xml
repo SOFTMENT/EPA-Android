@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/myaccountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/my_account"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/sfprosemibold"
+        android:textColor="#040404"
+        />
+
+    <TextView
+        android:layout_alignParentEnd="true"
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/logout"
+        android:layout_alignBaseline="@+id/myaccountText"
+       android:layout_marginEnd="16dp"
+        android:fontFamily="@font/sfprosemibold"
+        android:textColor="@color/salmon"
+        />
+
+
+
+        <FrameLayout
+
+            android:layout_below="@+id/myaccountText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:id="@+id/frame"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            >
+
+            <ImageView
+
+                android:id="@+id/profile_image"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/man1" />
+
+            <ImageView
+
+
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/circleimageview" />
+
+        </FrameLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Vijay Rathore"
+        android:fontFamily="@font/sfprosemibold2"
+        android:textSize="15sp"
+        android:textColor="#414141"
+        android:layout_below="@+id/frame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/name"
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="iamvijay67@gmail.com"
+        android:fontFamily="@font/sfpromedium2"
+        android:textSize="11sp"
+        android:lines="1"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/shareApp"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        app:cardBackgroundColor="#42A5F5"
+        app:cardCornerRadius="8dp"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/username"
+           android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share_app"
+            android:fontFamily="@font/sfprosemibold2"
+            android:textSize="12sp"
+            android:lines="1"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareApp"
+            android:id="@+id/adminItemView"
+            >
+
+            <RelativeLayout
+                android:id="@+id/adminVIEW"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#f6f6f6"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="@string/admin"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/sfprosemibold2"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="4dp"
+                android:id="@+id/addCat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/addCatImg"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_outline_category_24"
+                    app:tint="#A3A3A3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    />
+                <TextView
+                    android:layout_toEndOf="@+id/addCatImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="@string/manage_categories"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/sfpromedium2"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    <RelativeLayout
+
+        android:id="@+id/settingsVIEW"
+        android:layout_below="@+id/adminItemView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="#f6f6f6"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/settings"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sfprosemibold2"
+            />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addProductRR"
+            android:layout_below="@+id/settingsVIEW"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/addImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_add_circle_outline_24"
+                app:tint="#A3A3A3"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                />
+            <TextView
+                android:layout_toEndOf="@+id/addImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="@string/add_new_product"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/sfpromedium2"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/myProductRR"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/addProductRR">
+
+            <ImageView
+                android:id="@+id/myproductImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_baseline_storefront_24"
+                app:tint="#A3A3A3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/myproductImg"
+                android:fontFamily="@font/sfpromedium2"
+                android:text="@string/manage_store"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/favRR"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/myProductRR">
+
+            <ImageView
+                android:id="@+id/favImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                app:tint="#A3A3A3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/favImg"
+                android:fontFamily="@font/sfpromedium2"
+                android:text="@string/favorites"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/favRR">
+
+            <ImageView
+                android:id="@+id/languageImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_baseline_language_24"
+                app:tint="#A3A3A3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@+id/languageImg"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpromedium2"
+                    android:text="@string/language"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/languageName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/sfpromedium2"
+                    android:text="@string/english"
+                    android:textColor="#42A5F5"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                app:tint="#A3A3A3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/clearCacheRR"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/language">
+
+            <ImageView
+                android:id="@+id/clearCacheImage"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_baseline_cached_24"
+                app:tint="#A3A3A3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/clearCacheImage"
+                android:fontFamily="@font/sfpromedium2"
+                android:text="@string/clear_cache"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+        android:id="@+id/aboutUsView"
+        android:layout_below="@+id/clearCacheRR"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="#f6f6f6"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/about_us"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sfprosemibold2"
+            />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="4dp"
+            android:id="@+id/privacypolicy"
+            android:layout_below="@+id/aboutUsView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/privacyImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_outline_privacy_tip_24"
+                app:tint="#A3A3A3"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                />
+            <TextView
+                android:layout_toEndOf="@+id/privacyImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="@string/privacy_policy"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/sfpromedium2"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:id="@+id/termsandcondition"
+            android:layout_below="@+id/privacypolicy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/termsImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_outline_insert_drive_file_24"
+                app:tint="#A3A3A3"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                />
+            <TextView
+                android:layout_toEndOf="@+id/termsImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="@string/terms_amp_conditions"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/sfpromedium2"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/developer"
+            android:layout_below="@+id/termsandcondition"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/developerImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_outline_people_alt_24"
+                app:tint="#A3A3A3"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/developerImg"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="@string/app_developer"
+                    android:fontFamily="@font/sfpromedium2"
+                    />
+                <TextView
+                    android:id="@+id/developerCompany"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:text="softment.in"
+                    android:textColor="#42A5F5"
+                    android:fontFamily="@font/sfpromedium2"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/otherVIEW"
+            android:layout_below="@+id/developer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="#f6f6f6"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/others"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/sfprosemibold2"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rateUs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/otherVIEW"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/rateUsImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_outline_rate_review_24"
+                app:tint="#A3A3A3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/rateUsImg"
+                android:fontFamily="@font/sfpromedium2"
+                android:text="@string/rate_us"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="4dp"
+            android:id="@+id/support"
+            android:layout_below="@+id/rateUs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/supportImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_outline_support_24"
+                app:tint="#A3A3A3"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                />
+            <TextView
+                android:layout_toEndOf="@+id/supportImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="@string/support"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/sfpromedium2"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contactUs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/support">
+
+            <ImageView
+                android:id="@+id/contactImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_outline_contact_mail_24"
+                app:tint="#A3A3A3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@+id/contactImg"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpromedium2"
+                    android:text="@string/contact_us"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/contactEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:autoLink="email"
+                    android:fontFamily="@font/sfpromedium2"
+                    android:linksClickable="true"
+                    android:text="josericardocunhadeoliveira@gmail.com"
+                    android:textColor="#42A5F5"
+                    android:textColorLink="#42A5F5"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/deletAccount"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/contactUs"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/delete_back"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpromedium2"
+                android:text="@string/delete_account"
+                android:textColor="#f00"
+                android:textSize="14sp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/deletAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/version"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sfpromedium2"
+            />
+            <TextView
+                android:id="@+id/versionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="1.0"
+                android:fontFamily="@font/sfpromedium2"
+                />
+        </LinearLayout>
+</RelativeLayout>
+
+</ScrollView>
+

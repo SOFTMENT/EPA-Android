@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:padding="15dp"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/sfpromedium2"
+        android:textColor="#000000"
+        android:text="@string/error"
+        />
+    <TextView
+        android:lineSpacingExtra="1dp"
+        android:id="@+id/message"
+        android:layout_marginTop="10dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:fontFamily="@font/sfpromedium2"
+        android:textAlignment="center"
+        android:text="Failed to deposit money in wallet, But don't worry we have received your request and we will update your wallet manually within 1 hour"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ok"
+        app:cardCornerRadius="6dp"
+        android:layout_width="110dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/marsala"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:fontFamily="@font/sfpromedium2"
+            android:textColor="@color/white"
+            android:text="@string/ok"
+            />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

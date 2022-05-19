@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.application.epa.StripeCheckoutActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_margin="16dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/supportText"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/featured_ad"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sfprosemibold"
+            android:textSize="18sp"
+            android:textColor="#040404"
+            />
+
+        <TextView
+            android:id="@+id/example"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:textSize="13sp"
+            android:text="@string/see_example"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@id/supportText"
+            android:fontFamily="@font/sfprosemibold"
+            android:textColor="@color/salmon"
+
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:textSize="12sp"
+        android:fontFamily="@font/sfpromedium2"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/get_noticed_with_featured_tag_in_a_top_position"
+        />
+
+
+        <RelativeLayout
+            android:id="@+id/days30RR"
+           android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="30dp"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_back"
+            >
+            <RadioButton
+                android:buttonTint="@color/salmon"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:id="@+id/day30RB"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                />
+
+            <TextView
+                android:id="@+id/day30TEXT"
+                android:layout_marginStart="12dp"
+                android:layout_alignBaseline="@+id/day30RB"
+                android:layout_toEndOf="@+id/day30RB"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/featured_Ad_for_30_days"
+                android:fontFamily="@font/sfprosemibold"
+                android:textSize="14sp"
+                android:textColor="#040404"
+                />
+
+            <TextView
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/day30TEXT"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/day30RB"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reach_up_to_10_times_more_buyers"
+                android:fontFamily="@font/sfprosemibold"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:layout_alignBaseline="@+id/day30RB"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 25"
+                android:fontFamily="@font/sfprosemibold"
+                android:textSize="13sp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/days7RR"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_back"
+            >
+            <RadioButton
+                android:buttonTint="@color/salmon"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:id="@+id/day7RB"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                />
+
+            <TextView
+                android:id="@+id/day7TEXT"
+                android:layout_marginStart="12dp"
+                android:layout_alignBaseline="@+id/day7RB"
+                android:layout_toEndOf="@+id/day7RB"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/featured_ad_for_7_days"
+                android:fontFamily="@font/sfprosemibold"
+                android:textSize="14sp"
+                android:textColor="#040404"
+                />
+
+            <TextView
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/day7TEXT"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/day7RB"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reach_up_to_4_times_more_buyers"
+                android:fontFamily="@font/sfprosemibold"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:layout_alignBaseline="@+id/day7RB"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 10"
+                android:fontFamily="@font/sfprosemibold"
+                android:textSize="13sp"
+                />
+
+        </RelativeLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_margin="16dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/continueToPay"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sfpromedium2"
+        android:text="@string/continue_to_pay"
+        android:background="@drawable/transparent_back"
+        android:backgroundTint="@color/marsala"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:src="@drawable/cards"
+        />
+</RelativeLayout>
+</LinearLayout>
